@@ -1,0 +1,19 @@
+{
+  "name": "graphql-example",
+  "version": "1.0.0",
+  "description": "Implementation of a graphQL server using Koa and Knex",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WeCraftApps/graphql-example.git"
+  },
+  "author": "WeCraftApps",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WeCraftApps/graphql-example/issues"
+  },
+  "homepage": "https://github.com/WeCraftApps/graphql-example#readme"
+}
