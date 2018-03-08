@@ -1,0 +1,52 @@
+"""
+Définition des types de données
+"""
+
+type Author {
+  author_id: ID
+  first_name: String
+  last_name: String
+}
+
+type Comment {
+  comment_id: ID
+  content: String
+  author: Author
+}
+
+type Movie {
+  movie_id: ID
+  name: String
+  genre: String
+  rating: Int
+  explicit: Boolean
+  comments: [Comment]
+}
+
+"""
+Définition des prototypes des GET
+"""
+
+type Query {
+  authors(author_id: ID, first_name: String, last_name: String): [Author]
+  comments(comment_id: ID, author: ID): [Comment]
+  movies(movie_id: ID, name: String, genre: String, rating: Int, explicit: Boolean): [Movie]
+}
+
+"""
+Définition des prototypes des POST, UPDATE, DELETE
+"""
+
+type Mutation {
+  addMovie(movie_id: ID, name: String, genre: String, rating: Int, explicit: Boolean, comments: [ID]): Movie
+  updateMovie(movie_id: ID!, name: String, genre: String, rating: Int, explicit: Boolean, comments: [ID]): Movie
+  deleteMovie(movie_id: ID!): Movie
+
+  addComment(comment_id: ID, content: String, author: ID!): Comment
+  updateComment(comment_id: ID!, content: String, author: ID!): Comment
+  deleteComment(comment_id: ID!): Comment
+
+  addAuthor(author_id: ID, first_name: String, last_name: String): Author
+  updateAuthor(author_id: ID!, first_name: String, last_name: String): Author
+  deleteAuthor(author_id: ID!): Author
+}

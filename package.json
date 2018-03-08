@@ -15,5 +15,19 @@
   "bugs": {
     "url": "https://github.com/WeCraftApps/graphql-example/issues"
   },
-  "homepage": "https://github.com/WeCraftApps/graphql-example#readme"
+  "homepage": "https://github.com/WeCraftApps/graphql-example#readme",
+  "dependencies": {
+    "apollo-server-koa": "^1.3.2",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "graphql": "^0.13.1",
+    "graphql-tools": "^2.21.0",
+    "knex": "^0.14.4",
+    "koa": "^2.5.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-helmet": "^3.3.0",
+    "koa-router": "^7.4.0",
+    "pg": "^7.4.1"
+  }
 }
