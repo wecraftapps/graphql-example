@@ -23,7 +23,7 @@
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "graphql": "^0.13.1",
     "graphql-tools": "^2.21.0",
-    "knex": "^0.14.4",
+    "knex": "^2.4.0",
     "koa": "^2.5.0",
     "koa-bodyparser": "^4.2.0",
     "koa-helmet": "^3.3.0",
